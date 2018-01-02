@@ -29,7 +29,8 @@ Route::group([ 'namespace' => 'Manager'], function () {
     Route::resource('article/category', "ArticleCategoryController"); //文章分类
     Route::resource('article', "ArticleController"); //文章详情
     Route::resource('friendship', "FriendshipController"); //友情链接
-
+    Route::resource('picture/category', "PictureCategoryController"); //图片分类
+    Route::resource('picture', "PictureController"); //图片管理
 });
 
 Route::group([ 'namespace' => 'Manager'], function () {

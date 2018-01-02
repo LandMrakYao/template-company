@@ -19,7 +19,7 @@ class ArticleController extends Controller
     public function index(Request $request)
     {
         $acId = $request->acId;
-        $data = Article::where('acId', $acId)->orderBy('created_at','DESC')->paginate(15)->toArray();
+        $data = Article::where('acId', $acId)->orderBy('created_at','DESC')->paginate(20)->toArray();
         $result['article'] = $data['data'];
         $result['totalNum'] = $data['total'];
         return $this->apiResponse($result);

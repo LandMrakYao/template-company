@@ -7,7 +7,7 @@ import axios from 'axios'
 import ElementUI from 'element-ui';
 import server from './config/api'
 import Vuex from 'vuex'
-import 'element-ui/lib/theme-default/index.css'
+import 'element-ui/lib/theme-chalk/index.css'
 
 
 Vue.config.productionTip = true
@@ -17,6 +17,7 @@ Vue.prototype.$http = axios
 Vue.prototype.ApiServer = server
 
 Vue.use(ElementUI)
+
 
 Vue.use(Vuex);
 const store = new Vuex.Store({

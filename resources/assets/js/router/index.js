@@ -10,6 +10,8 @@ import articleCategory from '../components/articleCategory.vue'
 import articleDetail from '../components/articleDetail.vue'
 import articleContent from '../components/articleContent.vue'
 import friendship from '../components/friendship.vue'
+import pictureCategory from '../components/pictureCategory.vue'
+import picture from '../components/picture.vue'
 
 Vue.use(Router)
 /*export default new Router({
@@ -58,6 +60,14 @@ export default new Router({
                 }, {
                     path: '/friendship',
                     component: friendship,
+                    meta: {requiresAuth: false}
+                }, {
+                    path: '/pictureCategory',
+                    component: pictureCategory,
+                    meta: {requiresAuth: false}
+                }, {
+                    path: '/picture',
+                    component: picture,
                     meta: {requiresAuth: false}
                 }
             ]

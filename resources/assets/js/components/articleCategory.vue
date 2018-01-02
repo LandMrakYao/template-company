@@ -20,7 +20,6 @@ articleCategory
                     prop="acId"
                     label="acId">
             </el-table-column>
-
             <el-table-column
                     prop="acName"
                     label="分类名称">
@@ -31,18 +30,15 @@ articleCategory
             </el-table-column>
             <el-table-column
                     label="操作"
-                    inline-template
                     width="200"
             >
                 <template slot-scope="row">
-
                     <el-button @click="show(row)" type="text" size="small">查看</el-button>
                     <el-button type="text" @click="editArticleCategory(row, $index)" size="small">编辑</el-button>
                     <el-button type="text" @click="destroyArticleCategory(row, $index)" size="small">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
-
         <el-dialog title="编辑分类" :visible.sync="articleCategoryVisible">
             <el-form :model="form">
                 <el-form-item label="分类名称" :label-width="formLabelWidth">
@@ -68,7 +64,6 @@ articleCategory
                 <el-button type="primary" @click="saveArticleCategory()">确 定</el-button>
             </div>
         </el-dialog>
-
     </div>
 </template>
 <script>
